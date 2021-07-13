@@ -1,0 +1,43 @@
+﻿<!-- HTML5 required for bootstrap framework -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Make responsive with boostrap framework -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Dynamic Page Title -->
+        <title>@ViewData["Title"] - Kestra Coding Test</title>
+        <!-- Load framework and custom styling -->
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </head>
+    <body>
+        <!-- Requirement: "1)	Simple header and footer section"-->
+        <header>
+            <nav class="navbar border-bottom navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" asp-controller="Home" asp-action="Index">Kestra Coding Test - Home</a>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <!-- Requirement: "1)	Simple header and footer section"-->
+        <footer class="footer border-top bg-dark">
+            <div class="container text-center text-light">
+                &copy; 2021 - Nathan MacLaurin
+            </div>
+        </footer>
+        <!-- Load JS framework and custom scripts -->
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        <!-- TODO: Figure this RenderSection thang out -->
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+</html>

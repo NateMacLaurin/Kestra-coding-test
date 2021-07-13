@@ -1,0 +1,4 @@
+﻿@model Kestra_coding_test.Models.FormDropdownOptions
+
+<label labelfor="SelectorValue">Location</label>
+@Html.DropDownList("Dropdown", ViewBag.Dropdown, "Select a Value", new { type = "text", @for ="SelectorValue", @class = "form-control" })

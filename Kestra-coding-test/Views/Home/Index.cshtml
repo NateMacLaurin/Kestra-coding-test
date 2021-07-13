@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+
+}
+
+<div class="container">
+    <!-- Requirement: 2)	A hero/banner image with text (any image or even placeholder.com mock image is fine) -->
+    <div class="jumbotron jumbotron-fluid hero">
+        <div class="container">
+            <h2 class="display-4 text-light">Welcome</h2>
+            <p class="lead text-light">This is a simple, responsive home page in .NET MVC.</p>
+        </div>
+    </div>
+    <!-- Requirement: 3)	A block of content with an image on one side and a block of text on the other, with a button link (to anywhere, or nowhere). -->
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="~/images/yellow-metal-design-decoration.jpg" class="img-fluid" alt="Yellow metal design decoration" />
+        </div>
+        <div class="col">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button onclick="location.href='@Url.Action("Index", "FormData")'" 
+                    class=" btn btn-link">Link - FormData/Index
+            </button>
+</div>
+    </div>
+    <!-- Requirement: 4)	A simple form with a dropdown for at least one of the inputs -->
+    <partial name="../Shared/_HomeForm" />
+</div>

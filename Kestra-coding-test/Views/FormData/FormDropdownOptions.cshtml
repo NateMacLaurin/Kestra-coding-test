@@ -1,12 +1,12 @@
 ﻿@model IEnumerable<Kestra_coding_test.Models.FormDropdownOptions>
 
 <div class="container">
-    <div class="row pt-4">
-        <div class="col-6">
+    <div class="d-flex row pt-4">
+        <div class="col-sm-6">
             <h2 class="text-primary">FormDropdownOptions - Data</h2>
         </div>
-        <div class="col-6 align-content-end">
-            <a class="nav-link" asp-controller="FormData" asp-action="Index">Back to Form Data</a>
+        <div class="col-sm-6 align-content-end flex-wrap">
+            <a class="nav-link text-primary" asp-controller="FormData" asp-action="Index">Back to Form Data</a>
         </div>
     </div>
         
@@ -34,6 +34,6 @@
     }
     else
     {
-        <p>No FormDropdownOptions Exist!</p>
+        <p class="text-primary">No FormDropdownOptions Exist!</p>
     }
 </div>

@@ -2,12 +2,12 @@
 
 
 <div class="container">
-    <div class="row pt-4">
+    <div class="d-flex row pt-4">
         <div class="col-6">
             <h2 class="text-primary">FormData - Data</h2>
         </div>
-        <div class="col-6 align-content-end">
-            <a class="nav-link" asp-controller="FormData" asp-action="FormDropdownOptions">Form Dropdown Options</a>
+        <div class="col-6 align-content-end flex-wrap">
+            <a class="nav-link text-primary" asp-controller="FormData" asp-action="FormDropdownOptions">Form Dropdown Options</a>
         </div>
 
     </div>
@@ -41,6 +41,6 @@
     }
     else
     {
-        <p>No FormData Exists!</p>
+        <p class="text-primary">No FormData Exists!</p>
     }
 </div>
